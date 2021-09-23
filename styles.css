@@ -1,0 +1,94 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+
+#welcome_banner, video{
+    display: none;
+}
+
+.myMargin{
+    padding: 2em 0.5em;
+}
+
+input{
+    max-width: 40ch;
+}
+
+#advisory{
+    border: 1px solid #222
+}
+
+body{
+    background-color: #fafafa;
+}
+
+.container{
+    background-color: #fff;
+    width: 75%;
+}
+
+header.container{
+    background-color: #00487e;
+    color: #fff;
+    padding: 1em;
+}
+
+header a{
+    color: #b5c8d4;
+    text-decoration: none;
+    cursor: default;
+}
+
+header a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+textarea{
+    resize: none;
+}
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #welcome_banner, video{
+        display: block;
+    }
+
+    .myMargin{
+        padding: 2em 2em;
+    }
+    
+    #signin_button{
+        padding: 1.8em 1em;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .myMargin{
+        padding: 2em 3.5em;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+    .myMargin{
+        padding: 2em 5em;
+    }
+}
+

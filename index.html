@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NBI Clearance</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap.min CSS & JS, JQuery,  -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!---------------------- HEADER ---------------------->
+        <header class="container">
+            <div class="row">
+                <div class="logo col-xs-12 col-md-6">
+                    <a href="#page-top"> <!-- class="navbar-brand page-scroll" data-reactid=".0.2.0.0.0.0.0"-->
+                        <img src="http://clearance.nbi.gov.ph/img/nbi-logo.png" class="img-fluid"> <!--data-reactid=".0.2.0.0.0.0.0"-->
+                    </a>
+                </div>
+                <div id="sign_in" class="col-xs-12 col-md-6">
+                    <form>
+                        <h4>Sign in</h4>
+                        <div class="form-group col-md-5">
+                            <label for="email">Email: </label>
+                            <input type="text" id="email" class="form-control" placeholder="example@email.com">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="password">Password: </label>
+                            <input type="password" id="password" class="form-control" aria-describedby="passwordHelp" >
+                            <a id="passwordHelp" class="form-text" data-toggle="modal" data-target="#forgotPassword">Forgot password?</a>
+                        </div>
+                        <div class="form-group col-md-2 " id="signin_button">
+                            <button type="submit" class="btn btn-primary" >Sign in</button>
+                        </div>
+    
+                    </form>
+                </div>  <!-- end of #sign_in -->
+
+            </div> <!-- end of .row -->
+        </header>
+
+            
+            <!-- Modal: Forgot Password -->
+            <div class="modal fade" id="forgotPassword" role="dialog">
+                <div class="modal-dialog">
+                
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Forgot password?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="forgotEmail">Email: </label>
+                                <input type="text" id="forgotEmail" class="form-control" placeholder="example@email.com">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    </div>
+                </div>
+                
+                </div>  <!-- end of modal content -->
+            </div> <!-- end of modal -->
+        
+        </header>
+            
+        <!---------------------- MAIN ---------------------->
+        <main>
+
+            <div class="container">
+
+                 <!-- Left Column-->
+                <div class="col-md-6">
+                    <div id="welcome_banner">
+                        <h3 class="text-center">Welcome to</h3>
+                        <h2 class="text-center">NBI CLEARANCE ONLINE REGISTRATION AND APPLICATION SERVICES</h2>
+                        <h4 class="text-center">You can now apply online. Anytime. Anywhere.</h4>
+                    </div>
+                    <div class="myMargin">
+                        <h3>ADVISORY</h3>
+                                <p>
+                                    Notice is hereby given to all NBI clearance applicants who are:
+                                
+                                    <ul>
+                                        <li>First-time applicants</li>
+                                        <li>for Renewal of NBI clearance</li>
+                                        <li>for Renewal but previous NBI clearance has correction/error/changes in any field, even if a single letter is to be corrected, needs to register online again.</li>
+                                    </ul>
+                                </p>    
+                                    
+                                <p> 
+                                    To present any TWO (2) Valid Government-issued I.D's such as:
+                                    <ul>
+                                        <li>UMID</li>
+                                        <li>Passport</li>
+                                        <li>Driver's License</li>
+                                        <li>Birth Certificate authenticated by PSA (Original copy)</li>
+                                    </ul>
+                                </p>
+                                
+                                <p>
+                                    Please keep in mind that Non-Government issued I.D's such as Company I.D's and Barangay Clearance are NOT ACCEPTED as Valid I.D's in processing NBI clearance. Additionally, a Barangay Certificate is required for First Time Job Seekers availing the free service under RA 11261.
+        
+                                    By Management
+                                </p>
+                    </div>
+
+                    <!-- Video -->
+                    <div>
+                        <video type="video/mp4" width="100%" src="https://s3-ap-southeast-1.amazonaws.com/nbiis/videos/nbi-video-landingpage.mp4" poster="https://s3-ap-southeast-1.amazonaws.com/nbiis/videos/white-space.jpg" autoplay="" loop="" muted="" data-reactid=".0.3.0.0.1.1.0"><source src="https://s3-ap-southeast-1.amazonaws.com/nbiis/videos/nbi-video-landingpage.mp4" data-reactid=".0.3.0.0.1.1.0.0"><p class="warning" data-reactid=".0.3.0.0.1.1.0.1">Your browser does not support HTML5 video.</p></video>
+                    </div>
+
+
+                </div> <!-- End of Left Column-->
+
+                 <!-- Right Column-->
+                <div class="col-sm-6 myMargin"> 
+
+                    <!-- NAV PILL -->
+                    <ul class="nav nav-pills">
+                        <li class="active"><a data-toggle="pill" href="#onlineRegistration">NBI Online Registration Form</a></li>
+                        <li><a data-toggle="pill" href="#clearanceRenewal">NBI Clearance Renewal</a></li>
+                        <li><a data-toggle="pill" href="#clearanceVerification">NBI Clearance Verification</a></li>
+                        <li><a data-toggle="pill" href="#ftj1">First Time Jobseekers</a></li>
+                    </ul>
+                    
+                    <div class="tab-content col-sm-12 col-lg-12">
+                        <!------- ONLINE REGISTRATION -->
+                        <div id="onlineRegistration" class="tab-pane fade in active">
+                            <h3>NBI Online Registration Form</h3><form>
+                                <div class="form-group">
+                                    <label for="reg_givenname">Given Name: </label>
+                                    <input type="text" id="reg_givenname" class="form-control" aria-describedby="reg_givenname_help" placeholder="Given Name">
+                                    <small id="reg_givenname_help" class="form-text text-muted">(ex. DAVID JR., JOHN III)</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg_middlename">Middle Name: </label>
+                                    <input type="text" id="reg_middlename" class="form-control" placeholder="Middle Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg_lastname">Last Name: </label>
+                                    <input type="text" id="reg_lastname" class="form-control" placeholder="Last Name">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="reg_mobile">Mobile Number: </label>
+                                    <input type="text" id="reg_mobile" class="form-control" placeholder="Mobile Number">
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="reg_birthday">Birthday: </label>
+                                    <input type="date" id="reg_birthday" name="birthday">
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="reg_sex">Sex: </label>
+                                    <select class="form-select form-select-lg" id="reg_sex" aria-label="Sex">
+                                        <option disabled selected hidden></option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="reg_civilStatus">Civil Status: </label>
+                                    <select class="form-select form-select-lg" id="reg_civilStatus" a-label="Civil Status">
+                                        <option disabled selected hidden></option>
+                                        <option value="Single">Single</option>
+                                        <option value="Married">Married</option>
+                                        <option value="Divorced">Divorced</option>
+                                        <option value="Annulled">Annulled</option>
+                                        <option value="Widowed">Widowed</option>
+                                    </select>
+                                </div>
+    
+                                <hr>
+                                <h4>Register</h4>
+                                <div class="form-group">
+                                    <label for="reg_email">Email: </label>
+                                    <input type="email" id="reg_email" class="form-control"  placeholder="Email address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg_password">Password: </label>
+                                    <input type="password" id="reg_password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg_confirmPassword">Confirm Password: </label>
+                                    <input type="password" id="reg_confirmPassword" class="form-control">
+                                </div>
+    
+                                <hr>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="reg_terms">
+                                    <label class="form-check-label" for="reg_terms">
+                                        I have read and understood the
+                                        <a id="tos" class="form-text" href="tos.html" title="Terms of Service" target="_blank">Terms of Service</a>
+                                    </label>
+                                </div>
+                                    
+                                <div id="reg_register" style="display:none">
+                                    <button type="submit" class="btn btn-primary">Register</button>
+                                </div>    
+                            </form>
+                        </div>  <!-- End of Online Registration -->
+
+                        <!-- NBI Clearance Renewal -->
+                        <div id="clearanceRenewal" class="tab-pane fade">
+                            <h3>NBI Clearance Renewal</h3><form>
+                                <div class="form-group">
+                                    <label for="renwal_oldNBIID">Old NBI ID: </label>
+                                    <input type="text" id="renwal_oldNBIID" class="form-control" placeholder="Old NBI ID">
+                                    <a id="renwal_oldNBIID_help" class="form-text" data-toggle="modal" data-target="#forgotNBIID">Forgot old NBI ID?</a>
+                                </div>
+        
+                                <div class="form-group">
+                                    <label for="renewal_givenname">Given Name: </label>
+                                    <input type="text" id="renewal_givenname" class="form-control" aria-describedby="renewal_givenname_help" placeholder="Given Name">
+                                    <small id="renewal_givenname_help" class="form-text text-muted">(ex. DAVID JR., JOHN III)</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="renewal_middlename">Middle Name: </label>
+                                    <input type="text" id="renewal_middlename" class="form-control" placeholder="Middle Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="renwal_lastname">Last Name: </label>
+                                    <input type="text" id="renewal_lastname" class="form-control" placeholder="Last Name">
+                                </div>
+        
+                                <div class="form-group">
+                                    <label for="renewal_mobile">Mobile Number: </label>
+                                    <input type="text" id="renewal_mobile" class="form-control" placeholder="Mobile Number">
+                                </div>
+        
+                                <div class="form-group">
+                                    <label for="birthday">Birthday: </label>
+                                    <input type="date" id="birthday" name="birthday">
+                                </div>
+                            </form>
+
+                            
+                            <!-- Modal: Forgot NBI ID -->
+                            <div class="modal fade" id="forgotNBIID" role="dialog">
+                                <div class="modal-dialog">
+                                
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Forgot password?</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <h4>Recover NBI ID</h4>
+                                            <div class="form-group">
+                                                <label for="recover_givenname">Given Name: </label>
+                                                <input type="text" id="recover_givenname" class="form-control" aria-describedby="recover_givenname_help" placeholder="Given Name">
+                                                <small id="recover_givenname_help" class="form-text text-muted">(ex. DAVID JR., JOHN III)</small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="recover_lastname">Last Name: </label>
+                                                <input type="text" id="recover_lastname" class="form-control" placeholder="Last Name">
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="recover_method">Recover by: </label>
+                                                <select class="form-select form-select-lg" id="recover_method" aria-label="Recover method">
+                                                    <option disabled selected hidden></option>
+                                                    <option value="Email">Email</option>
+                                                    <option value="Mobile">Mobile Number</option>
+                                                </select>
+                                            </div>
+                    
+                                            <div class="form-group" id="recover_email" style="display:none;">
+                                                <label for="recover_lastname">Email: </label>
+                                                <input type="text" id="recover_lastname" class="form-control" placeholder="Enter your NBI Online email address">
+                                            </div>
+                                            
+                                            <div class="form-group" id="recover_mobile" style="display:none;">
+                                                <label for="recover_lastname">Mobile Number: </label>
+                                                <input type="text" id="recover_lastname" class="form-control" placeholder="Enter your NBI Online mobile number">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary" data-dismiss="modal">Recover</button>
+                                    </div>
+                                </div>
+                                
+                                </div>  <!-- end of modal content -->
+                            </div> <!-- end of modal -->
+        
+
+                            <div>
+                                <button type="submit" class="btn btn-primary" id="nbiRenewal_register">Register</button>
+                            </div>
+                        </div>    <!-- End of NBI Clearance Renewal -->
+
+
+                        <!------- NBI Clearance Verification ------->
+                        <div id="clearanceVerification" class="tab-pane fade">
+                            <h3>NBI Clearance Verification</h3>
+                            <form>
+                                <label for="NBIIDNumber">Enter NBI ID Number: </label>
+                                <input type="text" class="form-control" id="NBIIDNumber">
+                            </form>
+
+                            <button type="button" class="btn btn-info" id="scanQR">Scan QR Code</button>
+                            <button type="submit" class="btn btn-primary">Verify</button>
+                        </div>  <!-- End of NBI Clearance Verification -->
+
+
+                        <div id="ftj1" class="tab-pane fade">
+                            <h3>First Time Jobseekers</h3>
+                            <p>
+                                Take note of the following notification pursuant to Section 3 and Section 4 of RA 11261:
+                                <ul>
+                                    <li>You could avail of this privilege once and for once copy of clearance only;</li>
+                                    <li>You need to present a duly issued Barangay Certificate from place of residence stating that you are a resident for at least six (6) months and a first time jobseeker;</li>
+                                    <li>The issued Barangay Certificate can be used within one year from the date of issuance.</li>
+                                </ul>
+                            </p>
+                            <button type="submit" id="ftj_reminder" class="btn btn-primary" data-toggle="pill" href="#firstTimeJobseeker">I understand</button>
+                        
+                        </div> 
+                    
+
+
+                        <!------- First Time Jobseekers 2 ------->
+                        <div id="firstTimeJobseeker" class="tab-pane fade">
+                            <h3>First Time Jobseekers</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="ftj_givenname">Given Name: </label>
+                                    <input type="text" id="ftj_givenname" class="form-control" aria-describedby="ftj_givenname_help" placeholder="Given Name">
+                                    <small id="ftj_givenname_help" class="form-text text-muted">(ex. DAVID JR., JOHN III)</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ftj_middlename">Middle Name: </label>
+                                    <input type="text" id="ftj_middlename" class="form-control" placeholder="Middle Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ftj_lastname">Last Name: </label>
+                                    <input type="text" id="ftj_lastname" class="form-control" placeholder="Last Name">
+                                </div>
+        
+                                <div class="form-group">
+                                    <label for="birthday">Birthday: </label>
+                                    <input type="date" id="birthday" name="birthday">
+                                </div>
+        
+                                <div class="form-group">
+                                    <label for="sex">Sex: </label>
+                                    <select class="form-select form-select-lg" id="sex" aria-label="Sex">
+                                        <option disabled selected hidden></option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+        
+                                <div class="form-group">
+                                    <label for="civilStatus">Civil Status: </label>
+                                    <select class="form-select form-select-lg" id="civilStatus" a-label="Civil Status">
+                                        <option disabled selected hidden></option>
+                                        <option value="Single">Single</option>
+                                        <option value="Married">Married</option>
+                                        <option value="Divorced">Divorced</option>
+                                        <option value="Annulled">Annulled</option>
+                                        <option value="Widowed">Widowed</option>
+                                    </select>
+                                </div>
+        
+        
+                                <hr>
+                                <h4>Mother's Maiden Name</h4>
+                                <div class="form-group">
+                                    <label for="ftj_motherGivenName">Given Name: </label>
+                                    <input type="text" id="ftj_motherGivenName" class="form-control" aria-describedby="ftj_motherGivenName_help" placeholder="Mother's Given Name">
+                                    <small id="ftj_motherGivenName_help" class="form-text text-muted">(ex. DAVID JR., JOHN III)</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ftj_motherMiddleName">Middle Name: </label>
+                                    <input type="text" id="ftj_motherMiddleName" class="form-control" placeholder="Mother's Middle Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ftj_motherLastName">Last Name: </label>
+                                    <input type="text" id="ftj_motherLastName" class="form-control" placeholder="Mother's Last Name">
+                                </div>
+       
+        
+                                <hr>
+                                <h4>Register</h4>
+                                <div class="form-group">
+                                    <label for="ftj_email">Email: </label>
+                                    <input type="email" id="ftj_email" class="form-control"  placeholder="Email address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ftj_password">Password: </label>
+                                    <input type="password" id="ftj_password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ftj_confirmPassword">Confirm Password: </label>
+                                    <input type="password" id="ftj_confirmPassword" class="form-control">
+                                </div>
+        
+                                <hr>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="ftj_terms">
+                                    <label class="form-check-label" for="ftj_terms">
+                                        I have read and understood the
+                                        <a id="tos" class="form-text" href="tos.html" title="Terms of Service" target="_blank">Terms of Service</a>
+                                    </label>
+                                </div>
+                            </form>
+
+                            <div id="ftj_register" style="display:none">
+                                <button type="submit" id="ftj_register" class="btn btn-primary">Register</button>
+                            </div>
+
+
+                        </div>  <!-- End of First Time Jobseekers -->
+                    </div> <!-- End of Tab -->
+
+                </div>  <!-- End of Right Column -->
+            </div>      <!-- End of Container -->
+            
+        </main>
+
+        
+        <!-- Modal: Data Privacy-->
+        <div class="modal fade" id="dataPrivacy" tabindex="-1" role="dialog" aria-labelledby="dataPrivacyLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+
+                <!-- Modal Content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    <h3 class="modal-title" id="dataPrivacyLabel">Data Privacy Statement</h3>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>
+                            Taking into account the NBI’s principle of Nobility, Bravery and Integrity, the public and other government agencies and branches can be assured that the personal data and other sensitive data they entrusted to the NBI shall be used with due diligence and prudence, for the sole purpose of issuing individual Clearance Certificate, which may include investigation of derogatory record pursuant to our mandate under RA 10867.
+                        </p>
+                        <p>
+                            As such, upon accessing the NBI’s online registration site and availing of our services you acknowledge and agree that the information may be used and disclosed by the NBI in accordance with any legal and regulatory standards and in compliance with the “Data Privacy Act of 2012”.
+                        </p>
+                        <p class="text-justify"> 
+                            <strong>DISCLAIMER: </strong>THIS IS NOT THE OFFICIAL WEBSITE FOR NBI CLEARANCE ONLINE REGISTRATIONS. THIS IS A PERSONAL WEB DEVELOPMENT PROJECT. NO INFORMATION IS COLLECTED IN THE PROCESS.
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------- FOOTER ---------------------->
+        <footer class="container">
+            <hr>
+            <p class="text-muted">
+                © 2021 NBI Clearance Online Registration and Application Services -
+                <a id="contact_us_link" class="form-text" data-toggle="modal" data-target="#contact_us">Contact Us</a>
+            </p>
+            <p class="text-muted">
+                DISCLAIMER: THIS IS NOT THE OFFICIAL WEBSITE FOR NBI CLEARANCE ONLINE REGISTRATIONS. THIS IS A PERSONAL WEB DEVELOPMENT PROJECT. NO INFORMATION IS COLLECTED IN THE PROCESS.
+            </p>
+            <p class="text-muted">
+                Please visit their website at
+                <a href="http://clearance.nbi.gov.ph" title="NBI CLEARANCE">clearance.nbi.gov.ph</a>
+            </p>
+
+
+            <!------- Modal: Contact Us ------->
+            <div class="modal fade" id="contact_us" tabindex="-1" role="dialog" aria-labelledby="dataPrivacyLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+
+                    <!-- Modal Content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h3 class="modal-title">Contact Us</h3>
+                        </div>
+
+                        <div class="modal-body">
+                            <form>  <!-- Contact us form -->
+                                <div class="form-group">
+                                    <label for="contactUs_name">Name: </label>
+                                    <input type="text" id="contactUs_name" class="form-control" aria-describedby="contactUs_name_help" placeholder="Given Name">
+                                    <small id="contactUs_name_help" class="form-text text-muted">(ex. Juan dela Cruz)</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactUs_email">Email: </label>
+                                    <input type="email" id="contactUs_email" class="form-control" placeholder="example@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactUs_mobile">Mobile: </label>
+                                    <input type="text" id="contactUs_mobile" class="form-control" placeholder="Mobile Number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactUs_subject">Subject: </label>
+                                    <input type="text" id="contactUs_subject" class="form-control" placeholder="Subject of the message">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactUs_mobile">Message: </label>
+                                    <textarea id="contactUS_message" class="md-textarea form-control" rows="4"></textarea>
+                                </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Custom JavaScript -->
+        <script src="scripts.js"></script>
+
+        <script src="" async defer></script>
+    </body>
+</html>
